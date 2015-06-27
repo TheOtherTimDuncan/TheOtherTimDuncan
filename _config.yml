@@ -1,0 +1,18 @@
+# Site settings
+title: The Other Tim Duncan
+description: Random ravings about software development, technology and life
+author : Tim Duncan
+url: http://TheOtherTimDuncan.github.io
+gravatar_url: http://www.gravatar.com/avatar/562dd2ea62eb03c58432fd422b7f9e06
+github_username:  TheOtherTimDuncan
+
+# Jekyll Settings
+markdown: kramdown
+permalink: /archive/:year/:month/:day/:title/
+highlighter: pygments
+paginate: 1
+# paginate_path: "page/:num"
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
