@@ -9,9 +9,4 @@ layout: default
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         {% include article.html %}
     </article>
-    <nav class="posts">
-        {% for post in site.posts limit:1 offset: 1%}
-        <a href="{{ post.url }}" title="{{ post.title }}" class="next">{{ post.title }}</a>
-        {% endfor %}
-    </nav>
 </div>

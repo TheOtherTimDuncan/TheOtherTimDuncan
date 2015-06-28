@@ -7,6 +7,12 @@
     {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
     {% if excerpted == 'true' %}<a href="{{ post.url }}" class="more-link">{{ site.excerpt_link }}</a>{% endif %}
 </div>
+<nav class="posts">
+    {% for post in site.posts limit:1 offset: 1%}
+    <a href="{{ post.url }}" title="{{ post.title }}" class="next">{{ post.title }}</a>
+    {% endfor %}
+</nav>
+{% include disqus.html %}
 {% else %}
 <h1 class="title" itemprop="name">{{ page.title }}</h1>
 {% include meta.html %}
