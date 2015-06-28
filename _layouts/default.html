@@ -3,18 +3,23 @@
 {% include head.html %}
 <body>
     <div class="sidebar">
-        <img src="{{ site.gravatar_url }}?s=160" alt="Gravatar" />
-        <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
-        <h5 class="site-description">{{ site.description }}</h5>
-        <nav class="social">
-            <a class="github" href="https://github.com/TheOtherTimDuncan" title="GitHub"></a>
-            <a class="rss" href="{{ "/atom.xml" | prepend: site.baseurl }}" title="RSS"></a>
-        </nav>
-        <nav class="menu">
-            <a href="/archive">Archives</a>
-            <a href="/recommended.html">Recommended</a>
-            <a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan/issues/new">Contact Me</a>
-        </nav>
+        <img src="{{ site.gravatar_url }}?s=160" alt="Gravatar" class="screen-large" />
+        <img src="{{ site.gravatar_url }}?s=80" alt="Gravatar" class="screen-small" />
+        <div class="title-container">
+            <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+            <h5 class="site-description">{{ site.description }}</h5>
+        </div>
+        <div class="nav-container">
+            <nav class="social">
+                <a class="github" href="https://github.com/TheOtherTimDuncan" title="GitHub"></a>
+                <a class="rss" href="{{ "/atom.xml" | prepend: site.baseurl }}" title="RSS"></a>
+            </nav>
+            <nav class="menu">
+                <a href="/archive">Archives</a>
+                <a href="/recommended.html">Recommended</a>
+                <a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan/issues/new">Contact Me</a>
+            </nav>
+        </div>
     </div>
     <div class="content">
         {{ content }}

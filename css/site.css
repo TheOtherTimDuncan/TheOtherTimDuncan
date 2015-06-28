@@ -5,23 +5,14 @@ body, html {
 
 .sidebar {
     background-color: #052F5F;
-    height: 100%;
-    color: white;
-    min-height: 100%;
-    display: inline-block;
-    width: 190px;
-    vertical-align: top;
     padding-left: 15px;
-    padding-right: 15px;
+    color: white;
 }
 
     .sidebar img {
         padding: 5px 5px;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        display: block;
         border-radius: 50%;
         background-color: #005377;
     }
@@ -32,10 +23,100 @@ body, html {
     }
 
 .content {
-    width: 700px;
-    display: inline-block;
-    position: relative;
     padding: 15px;
+}
+
+@media (min-width: 1000px) {
+
+    .sidebar {
+        height: 100%;
+        display: inline-block;
+        width: 190px;
+        vertical-align: top;
+        min-height: 100%;
+        padding-right: 15px;
+    }
+
+        .sidebar img.screen-large {
+            margin-left: auto;
+            display: block;
+            margin-right: auto;
+        }
+
+    .content {
+        width: 700px;
+        display: inline-block;
+    }
+
+    .site-description {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    .menu a {
+        padding: 0 5px 5px 5px;
+        display: block;
+    }
+
+    .screen-small {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .sidebar {
+        display: block;
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .title-container {
+        vertical-align: top;
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+    .site-title {
+        margin-bottom: 0;
+    }
+
+    .site-description {
+        margin-top: 0;
+    }
+
+    .social {
+        float: right;
+        padding-right: 15px;
+    }
+
+
+    .menu {
+        vertical-align: middle;
+    }
+
+        .menu a {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+    .nav-container {
+        height: 38px;
+        line-height: 38px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .screen-large {
+        display: none;
+    }
 }
 
 footer {
@@ -48,40 +129,29 @@ footer {
         text-align: center;
     }
 
-nav {
-    margin-bottom: 15px;
+nav.posts {
+    text-align: center;
 }
 
-    nav.posts {
-        text-align: center;
+    nav.posts .prev {
+        float: left;
     }
 
-        nav.posts .prev {
-            float: left;
-        }
+    nav.posts .next {
+        float: right;
+    }
 
-        nav.posts .next {
-            float: right;
-        }
-
-.menu a {
-    display: block;
-    padding: 5px;
+.menu a:hover {
+    color: #819595;
 }
-
-    .menu a:hover {
-        color: #819595;
-    }
 
 .site-description {
     color: #819595;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .social a {
-    width: 38px;
     height: 38px;
+    width: 38px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 15px;
