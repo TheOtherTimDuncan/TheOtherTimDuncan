@@ -166,5 +166,14 @@ nav.posts {
 }
 
 .meta {
-    display: none;
+    color: #819595;
 }
+
+    .meta span, .meta a {
+        margin-right: 5px;
+    }
+
+        .meta a, .meta a:visited {
+            text-decoration: none;
+            color: #819595;
+        }
