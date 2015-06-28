@@ -82,6 +82,7 @@ body, html {
         vertical-align: top;
         display: inline-block;
         padding-left: 15px;
+        width: 70%;
     }
 
     .site-title {
@@ -96,7 +97,6 @@ body, html {
         float: right;
         padding-right: 15px;
     }
-
 
     .menu {
         vertical-align: middle;
