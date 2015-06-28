@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
 .sidebar {
@@ -50,6 +51,18 @@ footer {
 nav {
     margin-bottom: 15px;
 }
+
+    nav.posts {
+        text-align: center;
+    }
+
+        nav.posts .prev {
+            float: left;
+        }
+
+        nav.posts .next {
+            float: right;
+        }
 
 .menu a {
     display: block;

@@ -2,23 +2,16 @@
 layout: default
 ---
 
-{% assign index = true %}
 <div itemscope itemtype="http://schema.org/Blog">
-    {% for post in paginator.posts %}
-    {% unless post.redirect %}
+    {% assign post = site.posts.first %}
     {% assign content = post.content %}
+    {% assign index = true %}
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         {% include article.html %}
     </article>
-    {% endunless %}
-    {% endfor %}
+    <nav class="posts">
+        {% for post in site.posts limit:1 offset: 1%}
+        <a href="{{ post.url }}" title="{{ post.title }}" class="next">{{ post.title }}</a>
+        {% endfor %}
+    </nav>
 </div>
-<nav>
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" class="prev">Prev</a>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
-    {% endif %}
-    <div class="center"><a href="/archive">Archives</a></div>
-</nav>

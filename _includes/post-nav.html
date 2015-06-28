@@ -1,15 +1,3 @@
----
-layout: default
----
-<h1 itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ page.title }}</a></h1>
-<p class="meta">{{ page.date | date: "%b %-d, %Y" }}</p>
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-    {{ content }}
-</article>
-
-{% if index %}
-{% else %}
 <nav class="posts">
     {% if page.previous %}
     <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="prev">{{ page.previous.title }}</a>
@@ -19,4 +7,3 @@ layout: default
     {% endif %}
     <a href="/archive">Archives</a>
 </nav>
-{% endif %}
