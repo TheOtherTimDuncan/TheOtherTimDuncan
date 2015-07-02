@@ -2,6 +2,7 @@
 layout: post
 title: "How To Force Microsoft Flight Simulator X: Steam Edition To Run As A Standard User"
 date: 2015-06-26
+disqus_identifier: 1
 ---
 I recently purchased [Microsoft Flight Simulator X: Steam Edition](http://store.steampowered.com/app/314160/) for my son to play. To my surprise, every time I tried running the game it insisted on running as an administrator. And of course, since the game requires Steam, if you're not already running as an administrator, the game can't find Steam and refuses to run. Seriously, Microsoft? I get the game has been around since Windows XP, but did it really need that even then? I have a computer with a shared user account for the family that my son uses for gaming, and I have it locked down pretty tight to reduce the chance of him causing too much damage. Yes, that account is a standard account. Yes, the administrator account on that computer has a password. And, no, I'm not sharing that password with my son. And I'm definitely not going to try to teach my wife how to run Steam as an administrator. I make things too difficult for her already.
 
