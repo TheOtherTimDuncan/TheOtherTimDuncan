@@ -2,7 +2,14 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'theothertimduncan';
-    var disqus_identifier = '{% if page.disqus_identifier %}{{ page.disqus_identifier}}{% else %}{{ site.url }}{{ page.url }}{% endif %}';
+    
+    {% if page.disqus_identifier %}
+    var disqus_identifier = '{{ page.disqus_identifier}}';
+    {% else if post.disqus_identifer %}
+    var disqus_identifier = '{{ post.disqus_identifier}}';
+    {% else %} 
+    var disqus_identifier = '{{ site.url }}{{ page.url }}';
+    {% endif %}
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
