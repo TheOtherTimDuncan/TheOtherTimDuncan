@@ -3,6 +3,15 @@ body, html {
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
+figure {
+    margin: 1em 0;
+    text-align: center;
+}
+
+    figure figcaption {
+        text-align: center;
+    }
+
 .sidebar {
     background-color: #052F5F;
     padding-left: 15px;
