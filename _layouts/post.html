@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<h1 itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ page.title }}</a></h1>
-<p class="meta"><span class="fa fa-calendar"></span><span>{{ page.date | date: "%b %-d, %Y" }}</span><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ page.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
+<h1 itemprop="name"><a href="{{ page.url }}" itemprop="url">{{ page.title }}</a></h1>
+<p class="meta"><span class="fa fa-calendar"></span><span>{{ page.date | date: "%B %-d, %Y" }}</span><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ page.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
 
 <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     {{ content }}

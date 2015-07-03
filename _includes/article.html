@@ -1,6 +1,6 @@
 {% if index %}
 <h1 itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
-<p class="meta"><span class="fa fa-calendar"></span><span>{{ post.date | date: "%b %-d, %Y" }}</span><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ post.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
+<p class="meta"><span class="fa fa-calendar"></span><span>{{ post.date | date: "%B %-d, %Y" }}</span><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ post.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
 {% include meta.html %}
 <div class="entry-content" itemprop="articleBody">
     {{ content | excerpt }}
