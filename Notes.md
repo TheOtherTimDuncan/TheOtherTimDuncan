@@ -1,0 +1,1 @@
+To use html-proofer, download [curl](http://curl.haxx.se/dlwiz/?type=lib&os=Win32&flav=-), extract the zip file and add the location of the bin folder to the system path.
