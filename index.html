@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<div itemscope itemtype="http://schema.org/Blog">
-    {% assign post = site.posts.first %}
-    {% assign index = true %}
-    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        {% include article.html %}
-    </article>
-</div>
+{% assign post = site.posts.first %}
+{% assign index = true %}
+{% include article.html %}

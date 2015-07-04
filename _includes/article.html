@@ -1,33 +1,35 @@
-{% if index %}
-    {% assign source=post %}
-    {% assign content = post.content %}
-    <h1 class="title" itemprop="name"><a href="{{ source.url }}" itemprop="url">{{ source.title }}</a></h1>
-{% else %}
-    {% assign source=page %}
-    <h1 class="title" itemprop="name">{{ source.title }}</h1>
-{% endif %}
-
-<p class="meta"><span class="fa fa-calendar"></span><span>{{ source.date | date: "%B %-d, %Y" }}</span><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ post.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
-<div class="entry-content" itemprop="articleBody">
-    {{ content }}
-</div>
-
-{% if index %}
-    <nav class="posts">
-        {% for post in site.posts limit:1 offset: 1%}
-        <a href="{{ post.url }}" title="{{ post.title }}" class="prev">{{ post.title }}</a>
-        {% endfor %}
-    </nav>
-{% else %}
-    <nav class="posts">
-        {% if source.previous %}
-        <a href="{{ source.previous.url }}" title="Previous post: {{ source.previous.title }}" class="prev">{{ source.previous.title }}</a>
-        {% endif %}
-        {% if source.next %}
-        <a href="{{ source.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="Next post: {{ source.next.title }}" class="next">{{ source.next.title }}</a>
-        {% endif %}
-        <a href="/archive">Archives</a>
-    </nav>
-{% endif %}
-
-{% include disqus.html %}
+<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    {% if index %}
+        {% assign source=post %}
+        {% assign content = post.content %}
+        <h1 class="title" itemprop="name"><a href="{{ source.url }}" itemprop="url">{{ source.title }}</a></h1>
+    {% else %}
+        {% assign source=page %}
+        <h1 class="title" itemprop="name">{{ source.title }}</h1>
+    {% endif %}
+    
+    <p class="meta"><span class="fa fa-calendar"></span><time datetime="{{ source.date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ source.date | date: "%B %-d, %Y" }}</time><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ post.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
+    <div class="entry-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+    
+    {% if index %}
+        <nav class="posts">
+            {% for post in site.posts limit:1 offset: 1%}
+            <a href="{{ post.url }}" title="{{ post.title }}" class="prev">{{ post.title }}</a>
+            {% endfor %}
+        </nav>
+    {% else %}
+        <nav class="posts">
+            {% if source.previous %}
+            <a href="{{ source.previous.url }}" title="Previous post: {{ source.previous.title }}" class="prev">{{ source.previous.title }}</a>
+            {% endif %}
+            {% if source.next %}
+            <a href="{{ source.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="Next post: {{ source.next.title }}" class="next">{{ source.next.title }}</a>
+            {% endif %}
+            <a href="/archive">Archives</a>
+        </nav>
+    {% endif %}
+    
+    {% include disqus.html %}
+</article>
