@@ -197,7 +197,7 @@ nav.posts {
     color: #819595;
 }
 
-    .meta span, .meta a {
+    .meta span, .meta a, .meta time {
         margin-right: 5px;
     }
 
