@@ -1,23 +1,4 @@
 ---
 layout: default
 ---
-<h1 itemprop="name" class="title"><a href="{{ page.url }}" itemprop="url">{{ page.title }}</a></h1>
-<p class="meta"><span class="fa fa-calendar"></span><span>{{ page.date | date: "%B %-d, %Y" }}</span><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ page.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-    {{ content }}
-</article>
-
-{% if index %}
-{% else %}
-<nav class="posts">
-    {% if page.previous %}
-    <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="prev">{{ page.previous.title }}</a>
-    {% endif %}
-    {% if page.next %}
-    <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.next.title }}" class="next">{{ page.next.title }}</a>
-    {% endif %}
-    <a href="/archive">Archives</a>
-</nav>
-{% endif %}
-{% include disqus.html %}
+{% include article.html %}

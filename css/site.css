@@ -144,14 +144,20 @@ footer {
 
 nav.posts {
     text-align: center;
+    overflow: hidden;
+    border-bottom: solid 1px #819595;
+    padding-bottom: 15px;
 }
 
     nav.posts .prev {
         float: left;
+        max-width: 40%;
+        
     }
 
     nav.posts .next {
         float: right;
+        max-width: 40%;
     }
 
 .menu a:hover {
