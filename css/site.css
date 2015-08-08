@@ -193,6 +193,11 @@ nav.posts {
     background: url('/images/rss.png') center no-repeat #ef7522;
 }
 
+.feedly {
+    background: url('http://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png') center center no-repeat #87C040;
+    background-size: 28px 28px;
+}
+
 .meta {
     color: #819595;
 }
