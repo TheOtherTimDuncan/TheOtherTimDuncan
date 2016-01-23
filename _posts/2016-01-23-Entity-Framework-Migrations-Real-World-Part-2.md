@@ -21,3 +21,6 @@ So enough with the rambling preamble. These are the questions that I'm looking t
 3. If you are using Entity Framework but aren't using migrations, what do you use to source control your database? And what drove your decision to not use migrations?
 
 I'm going to put this out on Twitter and update this post with the replies I find interesting. And of course, comments are encouraged and appreciated.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/efmagicunicorns">@efmagicunicorns</a> I&#39;m looking for info on who uses EF Migrations in real world applications. <a href="https://twitter.com/hashtag/EFMigrations4Real?src=hash">#EFMigrations4Real</a> <a href="https://t.co/c9ZMjFAfpO">https://t.co/c9ZMjFAfpO</a></p>&mdash; Tim Duncan (@TheOtherTDuncan) <a href="https://twitter.com/TheOtherTDuncan/status/690975737956978688">January 23, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
