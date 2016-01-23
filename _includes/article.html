@@ -12,7 +12,10 @@
     <div class="entry-content" itemprop="articleBody">
         {{ content }}
     </div>
-    
+
+    <a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
     {% if index %}
         <nav class="posts">
             {% for post in site.posts limit:1 offset: 1%}
@@ -30,6 +33,6 @@
             <a href="/archive">Archives</a>
         </nav>
     {% endif %}
-    
+
     {% include disqus.html %}
 </article>
