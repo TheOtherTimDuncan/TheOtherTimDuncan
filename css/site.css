@@ -110,6 +110,10 @@ figure {
         float: right;
         padding-right: 15px;
     }
+    
+    .social a{
+        margin-right: 5px;
+    }
 
     .menu {
         vertical-align: middle;
@@ -177,16 +181,25 @@ nav.posts {
     color: #819595;
 }
 
+.social{
+    display: flex;
+   justify-content: space-between;
+}
+
 .social a {
     height: 38px;
     width: 38px;
     border-radius: 50%;
-    display: inline-block;
-    margin-right: 15px;
+    display: block;
 }
 
 .github {
     background: url('/images/GitHub-Mark-32px.png') center no-repeat #819595;
+}
+
+.twitter {
+    background: url('/images/Twitter.png') center no-repeat #55acee;
+    background-size: 32px;
 }
 
 .rss {
