@@ -7,9 +7,7 @@ gravatar_url: http://www.gravatar.com/avatar/562dd2ea62eb03c58432fd422b7f9e06
 github_username:  TheOtherTimDuncan
 
 # Jekyll Settings
-markdown: redcarpet
 permalink: /archive/:title/
-highlighter: pygments
 
 gems:
   - jekyll-redirect-from
