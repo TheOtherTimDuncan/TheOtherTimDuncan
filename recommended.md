@@ -2,7 +2,7 @@
 layout: default
 title: Recommended
 ---
-#Recommended
+<h1>Recommended</h1>
 
 [Troy Hunt](http://www.troyhunt.com) - Learn why you never want to use [public wifi](http://www.troyhunt.com/2013/04/the-beginners-guide-to-breaking-website.html) again and what mistakes you've been making in your web apps.
 
