@@ -1,20 +1,19 @@
 /* Styles for C# Code Format http://www.manoli.net/csharpformat/format.aspx */
 
-.csharpcode .rem, .highlight .c1, .highlight .cs, .highlight .c, .highlight .cm, .highlight .nn { color: #008000; }
-.csharpcode .kwrd, .highlight .kt, .highlight .k, .highlight .kd { color: #0000ff; }
-.csharpcode .str, .highlight .s, .highlight .s1 { color: #a31515; }
-.csharpcode .op { color: #0000c0; }
-.csharpcode .preproc { color: #cc6633; }
-.csharpcode .asp { background-color: #ffff00; }
-.csharpcode .html { color: #800000; }
-.csharpcode .attr, .highlight .na { color: #ff0000; }
-.csharpcode .alt 
-{
-	background-color: #f4f4f4;
+.language-csharp .rem, .highlight .c1, .highlight .cs, .highlight .c, .highlight .cm, .highlight .nn { color: #008000; }
+.language-csharp .kwrd, .highlight .kt, .highlight .k, .highlight .kd { color: #0000ff; }
+.language-csharp .str, .highlight .s, .highlight .s1 { color: #a31515; }
+.language-csharp .op { color: #0000c0; }
+.language-csharp .preproc { color: #cc6633; }
+.cshalanguage-csharprpcode .asp { background-color: #ffff00; }
+.language-csharp .html { color: #800000; }
+.language-csharp .attr, .highlight .na { color: #000000; }
+.language-csharp .alt 
+{ 
 	width: 100%;
 	margin: 0em;
 }
-.csharpcode .lnum { color: #606060; }
+.language-csharp .lnum { color: #606060; }
 
 /*
 
