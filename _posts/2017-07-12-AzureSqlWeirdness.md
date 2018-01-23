@@ -14,7 +14,7 @@ ALTER DATABASE CURRENT SET COMPATIBILITY_LEVEL=130, ANSI_NULLS ON, ANSI_PADDING 
 
 About a year ago, we did our first database in [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/). I continued my practice of executing the SQL above with no problems and continued to have no problems on the additional databases we added. 
 
-For those who might not be aware, when you create a database in Azure SQL, you have to specify the server you want to host the database. This is more of a virtual server than an actual server and there are other nuances to the concept, but every database we created ended up on the same server. We've also been using service level S0 Standard for all our databases so far.
+For those who might not be aware, when you create a database in Azure SQL, you have to specify the server you want to host the database. This is more of a virtual server than an actual server, and there are other nuances to the concept, but every database we created ended up on the same server. We've also been using service level S0 Standard for all our databases so far.
 
 The other aspect to creating the server in Azure is you have to specify the master admin credentials. This is essentially the ```sa``` user for this server. It also cannot be changed after the server is created.
 
@@ -36,10 +36,10 @@ Now I'm desperate. I reach out via [Twitter](https://twitter.com/TheOtherTDuncan
 
 So yes, the query did eventually finish. It looks like it took about an hour and a half though. And then Azure's record of that query disappears the following day...and all of a sudden the query starts working.
 
-So I don't know. Maybe it was reusing the credentials. Maybe some back end glitch by the Azure infrastructure with the first server instance was fixed by re-creating the server. And maybe I had to wait several hours for the bits to finish moving aroung. Maybe I did something to piss off the hamsters driving the server the first time around and didn't the second time around. Maybe I should just accept it...
+So I don't know. Maybe it was reusing the credentials. Maybe some back end glitch by the Azure infrastructure with the first server instance was fixed by re-creating the server. And maybe I had to wait several hours for the bits to finish moving around. Maybe I did something to piss off the hamsters driving the server the first time around and didn't the second time around. Maybe I should just accept it...
 
 {% include figure.html caption="Just accept it." url="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif" %}
 
 I think I'll start using this SQL against every database I create as a test. And if it gives me a problem, start over. But let's hope this was just a one-time thing.
 
-Corrections: spelling,grammar
+Corrections: spelling, grammar
