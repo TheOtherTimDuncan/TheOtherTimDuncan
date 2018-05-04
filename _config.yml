@@ -11,6 +11,7 @@ twitter:
   
 # Jekyll Settings
 permalink: /archive/:title/
+exclude: [vendor]
 
 gems:
   - jekyll-redirect-from
