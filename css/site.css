@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
@@ -7,9 +8,9 @@ figure {
     text-align: center;
 }
 
-    figure figcaption {
-        text-align: center;
-    }
+figure figcaption {
+    text-align: center;
+}
 
 .sidebar {
     background-color: #052F5F;
@@ -17,25 +18,25 @@ figure {
     color: white;
 }
 
-    .sidebar img {
-        padding: 5px 5px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border-radius: 50%;
-        background-color: #005377;
-    }
+.sidebar img {
+    padding: 5px 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #005377;
+}
 
-    .sidebar a, .sidebar a:visited {
-        color: white;
-        text-decoration: none;
-    }
+.sidebar a,
+.sidebar a:visited {
+    color: white;
+    text-decoration: none;
+}
 
 .content {
     padding: 15px;
 }
 
 @media (min-width: 1000px) {
-
     .sidebar {
         height: 100%;
         width: 190px;
@@ -43,45 +44,37 @@ figure {
         padding-right: 15px;
         position: fixed;
     }
-
-        .sidebar img.screen-large {
-            margin-left: auto;
-            display: block;
-            margin-right: auto;
-        }
-
+    .sidebar img.screen-large {
+        margin-left: auto;
+        display: block;
+        margin-right: auto;
+    }
     .content {
         width: 750px;
         position: absolute;
         left: 220px;
     }
-
     .site-description {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
     nav {
         margin-top: 15px;
     }
-
     .menu a {
         padding: 0 5px 5px 5px;
         display: block;
     }
-
     .screen-small {
         display: none;
     }
 }
 
 @media (max-width: 1000px) {
-
     .sidebar {
         width: 100%;
         height: 180px;
     }
-
     .content {
         position: absolute;
         top: 195px;
@@ -90,47 +83,38 @@ figure {
         bottom: 0px;
         overflow-y: scroll;
     }
-
     .title-container {
         vertical-align: top;
         display: inline-block;
         padding-left: 15px;
         width: 60%;
     }
-
     .site-title {
         margin-bottom: 0;
     }
-
     .site-description {
         margin-top: 0;
     }
-
     .social {
         float: right;
         padding-right: 15px;
     }
-    
-    .social a{
+    .social a {
         margin-right: 5px;
     }
-
     .menu {
         vertical-align: middle;
     }
-
-        .menu a {
-            display: inline-block;
-            padding: 0 5px;
-        }
-
+    .menu a {
+        display: inline-block;
+        padding: 0 5px;
+    }
     .nav-container {
         height: 38px;
         line-height: 38px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
-
     .screen-large {
         display: none;
     }
@@ -142,9 +126,9 @@ footer {
     margin-top: 50px;
 }
 
-    footer p {
-        text-align: center;
-    }
+footer p {
+    text-align: center;
+}
 
 nav.posts {
     text-align: center;
@@ -153,16 +137,15 @@ nav.posts {
     padding-bottom: 15px;
 }
 
-    nav.posts .prev {
-        float: left;
-        max-width: 40%;
-        
-    }
+nav.posts .prev {
+    float: left;
+    max-width: 40%;
+}
 
-    nav.posts .next {
-        float: right;
-        max-width: 40%;
-    }
+nav.posts .next {
+    float: right;
+    max-width: 40%;
+}
 
 .menu a:hover {
     color: #819595;
@@ -172,18 +155,19 @@ nav.posts {
     color: #819595;
 }
 
-.title a, .title a:visited{
+.title a,
+.title a:visited {
     color: black;
     text-decoration: none;
 }
 
-.title a:hover{
+.title a:hover {
     color: #819595;
 }
 
-.social{
+.social {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .social a {
@@ -215,11 +199,14 @@ nav.posts {
     color: #819595;
 }
 
-    .meta span, .meta a, .meta time {
-        margin-right: 5px;
-    }
+.meta span,
+.meta a,
+.meta time {
+    margin-right: 5px;
+}
 
-        .meta a, .meta a:visited {
-            text-decoration: none;
-            color: #819595;
-        }
+.meta a,
+.meta a:visited {
+    text-decoration: none;
+    color: #819595;
+}
