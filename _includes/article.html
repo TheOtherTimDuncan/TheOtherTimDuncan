@@ -8,7 +8,7 @@
         <h1 class="title" itemprop="name">{{ source.title }}</h1>
     {% endif %}
     
-    <p class="meta"><span class="fa fa-calendar"></span><time datetime="{{ source.date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ source.date | date: "%B %-d, %Y" }}</time><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ post.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
+    <p class="meta"><span class="far fa-calendar-alt"></span><time datetime="{{ source.date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ source.date | date: "%B %-d, %Y" }}</time><a href="https://github.com/TheOtherTimDuncan/TheOtherTimDuncan.github.io/edit/master/{{ post.path }}"><span class="fa fa-pencil-square-o"></span>Edit</a></p>
     <div class="entry-content" itemprop="articleBody">
         {{ content }}
     </div>

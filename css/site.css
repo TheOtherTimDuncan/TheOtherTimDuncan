@@ -347,7 +347,7 @@ nav.posts .next {
     white-space: nowrap;
 }
 
-.resume-social .fa {
+.resume-social .fa-fw {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 5px;

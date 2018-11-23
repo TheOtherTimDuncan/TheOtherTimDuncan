@@ -11,11 +11,11 @@ title: Resume
         <div class="resume-title">Full Stack Developer</div>
 
         <div class="resume-social">
-            <div><span class="fa fa-fw fa-map-marker"></span>Canal Winchester, OH</div>
-            <div><span class="fa fa-fw fa-rss"></span>https://theothertimduncan.com</div>
-            <div><span class="fa fa-fw fa-envelope"></span>theothertimduncan@gmail.com</div>
-            <div><span class="fa fa-fw fa-github"></span>TheOtherTimDuncan</div>
-            <div><span class="fa fa-fw fa-twitter"></span>TheOtherTDuncan</div>
+            <div><span class="fas fa-fw fa-map-marker-alt"></span>Canal Winchester, OH</div>
+            <div><span class="fas fa-fw fa-rss"></span>https://theothertimduncan.com</div>
+            <div><span class="fas fa-fw fa-envelope"></span>theothertimduncan@gmail.com</div>
+            <div><span class="fab fa-fw fa-github"></span>TheOtherTimDuncan</div>
+            <div><span class="fab fa-fw fa-twitter"></span>TheOtherTDuncan</div>
         </div>
 
         <h1>Skills</h1>
