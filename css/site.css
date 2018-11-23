@@ -341,6 +341,7 @@ nav.posts .next {
     text-align: center;
     margin-bottom: 15px;
     font-size: 25px;
+    white-space: nowrap;
 }
 
 .resume-social {
