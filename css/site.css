@@ -36,7 +36,7 @@ figure figcaption {
     padding: 15px;
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .sidebar {
         height: 100%;
         width: 190px;
@@ -70,7 +70,7 @@ figure figcaption {
     }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .sidebar {
         width: 100%;
         height: 180px;
@@ -209,4 +209,146 @@ nav.posts .next {
 .meta a:visited {
     text-decoration: none;
     color: #819595;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #052F5F;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    .content {
+        padding: 0;
+    }
+}
+
+.resume-body {
+    display: flex;
+    flex-direction: row;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.resume-body p,
+.resume-body ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.resume-left {
+    background-color: #052F5F;
+    padding: 15px;
+    color: white;
+}
+
+.resume-left img {
+    margin: 0 auto;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: #005377;
+}
+
+.resume-left h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-left h1:after {
+    content: '';
+    position: absolute;
+    margin-left: 5px;
+    top: 60%;
+    transform: translateY(-60%);
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    width: 500px;
+}
+
+.resume-right {
+    padding: 0 15px;
+}
+
+.resume-right h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-right h1:after {
+    border-color: white;
+    content: '';
+    position: absolute;
+    margin-left: 5px;
+    top: 60%;
+    transform: translateY(-60%);
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    width: 700px;
+    border-color: black;
+}
+
+.resume-right h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.resume-right h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.resume-right section {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.resume-right section div:last-child {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+.resume-name {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.resume-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.resume-social {
+    white-space: nowrap;
+}
+
+.resume-social .fa {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
