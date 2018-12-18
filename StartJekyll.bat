@@ -1,1 +1,1 @@
-bundle exec jekyll serve
+wsl bundle exec jekyll serve
